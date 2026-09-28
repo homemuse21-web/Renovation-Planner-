@@ -11,14 +11,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 
     <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com">
-    </script>
+    <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Mailchimp Embed CSS -->
     <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css" />
 
     <style>
-        /* ── Root Variables ── */
         :root {
             --sage-dark: #5B6E5A;
             --sage: #7D8F72;
@@ -34,10 +32,7 @@
             --charcoal-35: #A3A49C;
         }
 
-        * {
-            box-sizing: border-box;
-            scroll-behavior: smooth;
-        }
+        * { box-sizing: border-box; scroll-behavior: smooth; }
 
         body {
             background-color: var(--cream);
@@ -48,12 +43,8 @@
             padding: 0;
         }
 
-        .font-lora {
-            font-family: 'Lora', serif;
-        }
-        .font-poppins {
-            font-family: 'Poppins', sans-serif;
-        }
+        .font-lora { font-family: 'Lora', serif; }
+        .font-poppins { font-family: 'Poppins', sans-serif; }
 
         .kicker-label {
             font-family: 'Poppins', sans-serif;
@@ -64,7 +55,6 @@
             font-size: 0.7rem;
         }
 
-        /* ── Store Item Card ── */
         .guide-card {
             background: var(--cream-card);
             border-radius: 24px;
@@ -85,11 +75,8 @@
             box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease;
         }
-        .guide-card:hover .cover-image {
-            transform: scale(1.02);
-        }
+        .guide-card:hover .cover-image { transform: scale(1.02); }
 
-        /* ── Buttons ── */
         .btn-primary {
             background-color: var(--sage-dark);
             color: var(--cream);
@@ -126,10 +113,7 @@
             gap: 0.6rem;
             text-decoration: none;
         }
-        .btn-secondary:hover {
-            background-color: var(--sage-dark);
-            color: var(--cream);
-        }
+        .btn-secondary:hover { background-color: var(--sage-dark); color: var(--cream); }
 
         /* ── Mailchimp Overrides ── */
         #mc_embed_signup {
@@ -155,9 +139,7 @@
             font-size: 1rem !important;
             transition: background 0.25s ease;
         }
-        #mc_embed_signup .button:hover {
-            background-color: var(--gold) !important;
-        }
+        #mc_embed_signup .button:hover { background-color: var(--gold) !important; }
         #mc_embed_signup .mc-field-group input {
             border-radius: 8px !important;
             border-color: #d1d5db !important;
@@ -180,14 +162,8 @@
             animation: fadeIn 0.5s ease forwards;
         }
         @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(10px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
         }
         .download-link-item {
             display: flex;
@@ -246,17 +222,10 @@
             box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
             pointer-events: none;
         }
-        .toast.show {
-            transform: translateX(-50%) translateY(0);
-            opacity: 1;
-        }
+        .toast.show { transform: translateX(-50%) translateY(0); opacity: 1; }
 
         /* ── Feature List ── */
-        .feature-list {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
+        .feature-list { list-style: none; padding: 0; margin: 0; }
         .feature-list li {
             display: flex;
             align-items: flex-start;
@@ -266,19 +235,11 @@
             color: var(--charcoal-60);
             line-height: 1.5;
         }
-        .feature-list li svg {
-            flex-shrink: 0;
-            margin-top: 2px;
-        }
+        .feature-list li svg { flex-shrink: 0; margin-top: 2px; }
 
-        /* ── Responsive ── */
         @media (max-width: 640px) {
-            .hero-h1 {
-                font-size: 2.5rem !important;
-            }
-            #mc_embed_signup {
-                padding: 1.5rem !important;
-            }
+            .hero-h1 { font-size: 2.5rem !important; }
+            #mc_embed_signup { padding: 1.5rem !important; }
         }
     </style>
 </head>
@@ -298,11 +259,14 @@
                 <h1 class="font-lora font-semibold text-5xl md:text-7xl text-[#5B6E5A] mb-6 hero-h1">
                     Plan Your Renovation with Confidence
                 </h1>
-                <p class="font-lora text-xl md:text-2xl text-[#63645C] max-w-2xl mx-auto leading-relaxed mb-8">
-                    Professional planners and budget tools designed to save you thousands and eliminate renovation stress.
+                <p class="font-lora text-xl md:text-2xl text-[#63645C] max-w-2xl mx-auto leading-relaxed mb-4">
+                    Plan Your Dream Home — Save Time, Money &amp; Stress
+                </p>
+                <p class="text-sm text-[#8C6B3E] font-medium tracking-wide mb-8">
+                    Instant Digital Download | Secure Payment by Stripe
                 </p>
                 <div class="flex flex-wrap justify-center gap-4">
-                    <a href="#store" class="btn-primary">Browse Planners</a>
+                    <a href="#store" class="btn-primary">Get Instant Access </a>
                     <a href="#subscribe" class="btn-secondary">Get Free Guide</a>
                 </div>
             </div>
@@ -314,11 +278,12 @@
                 <div class="text-center mb-16">
                     <span class="kicker-label">OUR COLLECTIONS</span>
                     <h2 class="font-lora font-semibold text-4xl text-[#5B6E5A] mt-2">Renovation Planning Tools</h2>
+                    <p class="text-sm text-[#63645C] mt-3 max-w-xl mx-auto">What You Get Instantly After Payment — printable PDF planners, budget tools, and a Notion template.</p>
                 </div>
 
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
 
-                    <!-- PRODUCT 1 (NEW): FREE HOME RENOVATION BUDGET PLANNER -->
+                    <!-- PRODUCT 1: FREE HOME RENOVATION BUDGET PLANNER -->
                     <div class="guide-card flex flex-col h-full border-2 border-[#B08D57]">
                         <div class="p-6 bg-white flex-grow">
                             <img src="budget-planner-cover.png" alt="Home Renovation Budget Planner" class="cover-image mb-6" />
@@ -333,45 +298,46 @@
                             </ul>
                         </div>
                         <div class="p-6 bg-[#FAF7F0] border-t border-gray-100">
-                            <a href="https://homemuse.gumroad.com/l/wcevtz" target="_blank" class="btn-primary w-full justify-center">Get It Now</a>
+                            <a href="https://homemuse.gumroad.com/l/wcevtz" target="_blank" class="btn-primary w-full justify-center">Get Free Guide</a>
                         </div>
                     </div>
 
-                    <!-- PRODUCT 2: FREE KITCHEN PLANNER -->
-                    <div class="guide-card flex flex-col h-full">
+                    <!-- PRODUCT 2: KITCHEN PLANNER - $8 -->
+                    <div class="guide-card flex flex-col h-full border-2 border-[#B08D57]">
                         <div class="p-6 bg-white flex-grow">
                             <img src="kitchen-planner-cover.png" alt="Kitchen Renovation Planner" class="cover-image mb-6" />
-                            <span class="kicker-label text-[10px]">FREE GUIDE</span>
+                            <span class="kicker-label text-[10px] text-[#B08D57]">PREMIUM PLANNER — $8</span>
                             <h3 class="font-lora font-bold text-2xl text-[#5B6E5A] mb-2">Kitchen Renovation Planner</h3>
                             <p class="text-sm text-[#63645C] mb-4">The ultimate 21-page digital organizer to help you plan, budget, and execute your dream kitchen renovation with confidence.</p>
                             <ul class="feature-list mb-4">
-                                <li><svg class="w-5 h-5 text-[#5B6E5A]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Complete budget tracking system</li>
-                                <li><svg class="w-5 h-5 text-[#5B6E5A]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Contractor vetting checklist</li>
-                                <li><svg class="w-5 h-5 text-[#5B6E5A]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Timeline &amp; milestone planner</li>
-                                <li><svg class="w-5 h-5 text-[#5B6E5A]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Material selection worksheets</li>
+                                <li><svg class="w-5 h-5 text-[#B08D57]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Complete budget tracking system</li>
+                                <li><svg class="w-5 h-5 text-[#B08D57]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Contractor vetting checklist</li>
+                                <li><svg class="w-5 h-5 text-[#B08D57]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Timeline &amp; milestone planner</li>
+                                <li><svg class="w-5 h-5 text-[#B08D57]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Material selection worksheets</li>
                             </ul>
                         </div>
                         <div class="p-6 bg-[#FAF7F0] border-t border-gray-100">
-                            <a href="#subscribe" class="btn-primary w-full justify-center">Download Free</a>
+                            <a href="https://homemuse.gumroad.com/l/ixktu" target="_blank" class="btn-primary w-full justify-center" style="background-color: var(--gold);">Get Instant Access- $8</a>
                         </div>
                     </div>
 
-                    <!-- PRODUCT 3: PAID BUDGET PLANNER -->
+                    <!-- PRODUCT 3: BUDGET PLANNER + NOTION TEMPLATE - $27 -->
                     <div class="guide-card flex flex-col h-full border-2 border-[#B08D57]">
                         <div class="p-6 bg-white flex-grow">
-                            <img src="budget-planner-cover.png" alt="Home Renovation Budget Planner" class="cover-image mb-6" />
-                            <span class="kicker-label text-[10px] text-[#B08D57]">PREMIUM PLANNER</span>
-                            <h3 class="font-lora font-bold text-2xl text-[#5B6E5A] mb-2">Home Renovation Budget Planner</h3>
-                            <p class="text-sm text-[#63645C] mb-4">The complete 19-page financial workbook that saves you from costly mistakes, contractor nightmares, and scope creep on any project.</p>
+                            <img src="budget-planner-cover.png" alt="Home Renovation Budget Planner + Notion Template" class="cover-image mb-6" />
+                            <span class="kicker-label text-[10px] text-[#B08D57]">PREMIUM PLANNER — $27</span>
+                            <h3 class="font-lora font-bold text-2xl text-[#5B6E5A] mb-2">Home Renovation Budget Planner + Notion Template</h3>
+                            <p class="text-sm text-[#63645C] mb-4">The complete 19-page financial workbook + Notion template that saves you from costly mistakes, contractor nightmares, and scope creep on any project.</p>
                             <ul class="feature-list mb-4">
                                 <li><svg class="w-5 h-5 text-[#B08D57]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Room-by-room budget tracker</li>
                                 <li><svg class="w-5 h-5 text-[#B08D57]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Contractor comparison matrix</li>
                                 <li><svg class="w-5 h-5 text-[#B08D57]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Hidden cost identification guide</li>
                                 <li><svg class="w-5 h-5 text-[#B08D57]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>Warranty &amp; records log</li>
+                                <li><svg class="w-5 h-5 text-[#B08D57]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg><strong>Notion Template Included</strong></li>
                             </ul>
                         </div>
                         <div class="p-6 bg-[#FAF7F0] border-t border-gray-100">
-                            <a href="http://homemuse.gumroad.com/l/ysqarj" target="_blank" class="btn-primary w-full justify-center" style="background-color: var(--gold);">Get It Now</a>
+                            <a href="http://homemuse.gumroad.com/l/ysqarj" target="_blank" class="btn-primary w-full justify-center" style="background-color: var(--gold);">Get the Complete Bundle- $27</a>
                         </div>
                     </div>
 
@@ -417,9 +383,7 @@
                 <h2 class="font-lora font-semibold text-4xl text-[#5B6E5A] mb-6">Get the Kitchen Renovation Planner Free</h2>
                 <p class="text-[#63645C] mb-12 max-w-xl mx-auto">Subscribe below to receive your free 21-page Kitchen Renovation Planner immediately and get exclusive renovation tips delivered to your inbox.</p>
 
-                <!-- ===== MAILCHIMP EMBED (first code) ===== -->
                 <div id="mc_embed_shell">
-
                     <div id="mc_embed_signup">
                         <form action="https://gmail.us14.list-manage.com/subscribe/post?u=1a7a9baafcb6d5b8acee115a6&amp;id=5f50ccf937&amp;f_id=0084b5e5f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
                             <div id="mc_embed_signup_scroll">
@@ -441,7 +405,6 @@
                                     <div class="response" id="mce-success-response" style="display: none;"></div>
                                 </div>
 
-                                <!-- anti-bot -->
                                 <div aria-hidden="true" style="position: absolute; left: -5000px;">
                                     <input type="text" name="b_1a7a9baafcb6d5b8acee115a6_5f50ccf937" tabindex="-1" value="" />
                                 </div>
@@ -449,39 +412,29 @@
                                 <div class="optionalParent">
                                     <div class="clear foot">
                                         <input type="submit" name="subscribe" id="mc-embedded-subscribe" class="button" value="Unlock Now" />
-                                        <!-- Mailchimp branding removed -->
                                     </div>
                                 </div>
                             </div>
                         </form>
                     </div>
 
-                    <!-- Mailchimp validation script -->
-                    <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js">
-                    </script>
+                    <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
                     <script type="text/javascript">
                         (function($) {
                             window.fnames = new Array();
                             window.ftypes = new Array();
-                            fnames[0] = 'EMAIL';
-                            ftypes[0] = 'email';
-                            fnames[1] = 'FNAME';
-                            ftypes[1] = 'text';
-                            fnames[2] = 'LNAME';
-                            ftypes[2] = 'text';
-                            fnames[3] = 'ADDRESS';
-                            ftypes[3] = 'address';
-                            fnames[4] = 'PHONE';
-                            ftypes[4] = 'phone';
-                            fnames[5] = 'BIRTHDAY';
-                            ftypes[5] = 'birthday';
-                            fnames[6] = 'COMPANY';
-                            ftypes[6] = 'text';
+                            fnames[0] = 'EMAIL'; ftypes[0] = 'email';
+                            fnames[1] = 'FNAME'; ftypes[1] = 'text';
+                            fnames[2] = 'LNAME'; ftypes[2] = 'text';
+                            fnames[3] = 'ADDRESS'; ftypes[3] = 'address';
+                            fnames[4] = 'PHONE'; ftypes[4] = 'phone';
+                            fnames[5] = 'BIRTHDAY'; ftypes[5] = 'birthday';
+                            fnames[6] = 'COMPANY'; ftypes[6] = 'text';
                         }(jQuery));
                         var $mcj = jQuery.noConflict(true);
                     </script>
 
-                    <!-- ===== SUCCESS LINKS (shown after signup) ===== -->
+                    <!-- SUCCESS LINKS -->
                     <div id="signup-success-links" class="mt-12 text-left max-w-lg mx-auto">
                         <h3 class="font-lora font-bold text-2xl text-[#5B6E5A] mb-4 text-center">Your Planner is Ready!</h3>
                         <p class="text-sm text-[#63645C] mb-6 text-center">Click below to download your free Kitchen Renovation Planner:</p>
@@ -497,9 +450,7 @@
                             <a href="https://homemuse.gumroad.com/l/ixktu" target="_blank" class="text-[#B08D57] font-bold text-sm hover:underline">Download</a>
                         </div>
                     </div>
-
                 </div>
-                <!-- ===== END MAILCHIMP EMBED ===== -->
 
             </div>
         </section>
@@ -508,6 +459,13 @@
         <footer class="py-12 border-t border-gray-200 text-center">
             <p class="kicker-label">HOMEMUSE &copy; 2026</p>
             <p class="text-xs text-gray-400 mt-2">Plan Smart. Budget Wisely. Build Beautifully.</p>
+            <p class="text-xs text-gray-400 mt-1">Business Email: homemuse21@gmail.com</p>
+            <p class="text-xs text-gray-400 mt-2">
+                <a href="privacy.html" class="hover:underline">Privacy Policy</a> |
+                <a href="terms.html" class="hover:underline">Terms &amp; Refund Policy</a> |
+                <a href="mailto:homemuse21@gmail.com" class="hover:underline">Contact</a>
+            </p>
+            <p class="text-xs text-gray-400 mt-1">Secure Payments Powered by Stripe &amp; Gumroad</p>
         </footer>
 
     </main>
@@ -517,45 +475,30 @@
         (function() {
             'use strict';
 
-            // Observe the Mailchimp response container for success
             const successContainer = document.getElementById('mce-responses');
             if (successContainer) {
                 const observer = new MutationObserver(function(mutations) {
                     mutations.forEach(function(mutation) {
                         const successEl = document.getElementById('mce-success-response');
                         if (successEl && successEl.style.display !== 'none' && successEl.innerText.trim() !== '') {
-                            // Show the download links
                             const links = document.getElementById('signup-success-links');
                             if (links) links.style.display = 'block';
 
-                            // Hide the form
                             const form = document.getElementById('mc_embed_signup');
                             if (form) form.style.display = 'none';
 
-                            // Show toast
                             const toast = document.getElementById('toast');
                             if (toast) {
                                 toast.classList.add('show');
-                                setTimeout(function() {
-                                    toast.classList.remove('show');
-                                }, 5000);
+                                setTimeout(function() { toast.classList.remove('show'); }, 5000);
                             }
-
-                            // Stop observing once we've succeeded
                             observer.disconnect();
                         }
                     });
                 });
-
-                observer.observe(successContainer, {
-                    attributes: true,
-                    childList: true,
-                    subtree: true
-                });
+                observer.observe(successContainer, { attributes: true, childList: true, subtree: true });
             }
 
-            // Also handle the case where the form might redirect to a new page
-            // Fallback: if the user comes back to the page with a "?success" param
             if (window.location.search.indexOf('success') !== -1) {
                 const links = document.getElementById('signup-success-links');
                 if (links) links.style.display = 'block';
@@ -564,12 +507,9 @@
                 const toast = document.getElementById('toast');
                 if (toast) {
                     toast.classList.add('show');
-                    setTimeout(function() {
-                        toast.classList.remove('show');
-                    }, 5000);
+                    setTimeout(function() { toast.classList.remove('show'); }, 5000);
                 }
             }
-
         })();
     </script>
 
